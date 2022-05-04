@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-	<script>
-		function setFocus() {
-			var iframe = document.getElementById("kallender");
-			iframe.contentWindow.focus();
-		}
-	</script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/stylish.css">
 </head>
 
 <body onLoad="setFocus()">
-<br>
-<iframe src="https://calendar.google.com/calendar/embed?showTitle= *___REPLACE____*  " style="border-width:0" width="790" height="800" id="kallender"></iframe>
-
-<br>
-<br>
-
-<iframe src="https://www.ostgotatrafiken.se/avgangstavla/himmelstalundsvagen?sort=LineNumber&sub=a" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
-<iframe src="https://www.ostgotatrafiken.se/avgangstavla/norrkopings-resecentrum?lines=ostgotapendeln" height="300px" width="383px"  scrolling="no" style="border-width:0"> </iframe>
-
-<br>
-<iframe id="forecast_embed" height="245px" width="830px" src="https://forecast.io/embed/#lat=58.5993&lon=16.166&name=Norrköping&units=si"> </iframe>
-
-
+    <br>
+    <main class="main">
+        <iframe src="https://calendar.google.com/calendar/embed?src=banksfam719%40gmail.com&height=800&wkst=1&bgcolor=%23F09300&ctz=America%2FChicago&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=YmFua3NmYW03MTlAZ21haWwuY29t&color=%237986CB"></iframe>
+        <br>
+        <br>
+        <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/29d42n98d49/san-antonio/?unit=us" data-label_1="San Antonio" data-label_2="Weather" data-theme="original" >San Antonio Weather</a>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
+    </main>
 </body>
 </html>
